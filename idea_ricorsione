@@ -1,0 +1,21 @@
+
+
+Il numero di giorni corrisponde / max giorni == None?
+    Il budget è rispettato / max budget == None?
+        il valore culturare corrente è maggiore di quello ottimo?
+            sostituisci pacchetto
+            sostituisci costo
+            sostituisci valore culturale
+
+Per ogni attrazione presente nella lista attrazioni usate:
+    Prendo questo attributo come chiave del dict_attrazioni e itero nel set di tour:
+        elimino ogni tour presente dal dict_tour, poichè contiene attrazioni già usate
+Mi metto su ogni tour presente tra le chiavi del tour_map
+    Impongo i vincoli da rispettare
+        aggiungo la durata del tour attuale alla durata corrente
+        aggiungo il costo del tour attuale al costo corrente
+        appendo il tour attuale alla sequenza parziale
+        Per ogni attrazione presente nel set relativo al mio tour:
+            aggiungo il valore dell'attrazione al valore parziale
+            aggiungo l'attrazione alla lista delle attrazioni usate
+
